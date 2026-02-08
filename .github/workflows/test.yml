@@ -10,7 +10,7 @@ jobs:
       pull-requests: write
     steps:
       - uses: actions/checkout@v4
-      - name: Setup         # テストの準備
+      - name: Setup         # テストの準備2
         run: date > foo.md
       - name: Exercise      # テスト対象コードの実行
         id: exercise
