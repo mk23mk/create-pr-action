@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-# GitHubからGitタグをまとめてフェッチして、最新バージョンを取り出す
+# GitHubからGitタグをまとめてフェッチして、最新バージョンを取り出す 
 git fetch --tag 2>/dev/null
 version="$(git tag --sort=-v:refname | head -1 | sed 's/^v//')"
 
